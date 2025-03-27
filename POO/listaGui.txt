@@ -1,0 +1,5 @@
+5.O programa cria algo bem semelhante à janela criada no exercício 1, mas com algumas diferenças.
+Uma delas é que os botões ficam alinhados na parte de cima, e a caixa de texto fica logo abaixo.
+
+6.Esse comando adiciona um scroll na página, ou seja, conforme o texto vai sendo escrito, a página vai abaixando e 
+um botão que controla essa rolagem aparece na direita.

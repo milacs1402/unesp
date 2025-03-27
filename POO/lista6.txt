@@ -1,0 +1,15 @@
+1.  Os códigos apresentados nas transparências 5 e 8 diferem principalmente na forma como as threads são criadas
+e gerenciadas. Na transparência 5, a classe ThreadSimples estende a classe Thread, seguindo uma abordagem de herança,
+enquanto na transparência 8, a classe ThreadSimples implementa a interface Runnable. Isso resulta em diferentes
+métodos de inicialização das threads: na transparência 5, a thread é iniciada diretamente a partir de uma instância
+de ThreadSimples, enquanto na transparência 8, é criado um objeto Thread que recebe uma instância de ThreadSimples
+como argumento. Apesar de realizar tarefas semelhantes, como pausar a execução com o método sleep, a escolha entre
+herança e implementação de interface reflete diferentes abordagens de design, com a implementação de Runnable
+geralmente considerada mais flexível e modular. 
+
+3.No arquivo, vemos o método InvokeAndWait. O InvokeLater faria com que uma Thread ocorresse
+por último, depois que tudo fosse executado.
+
+5. Sim, mesmo com eventos pendentes, ela ainda poderia ser executada.
+
+6. Adicionando o catch (InvocationTargetException e), seria sim possível.

@@ -1,0 +1,46 @@
+|   |   |   |   |   |   |   |   |   |   |   |  Grafos  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   
+    
+    grafo G = (V,A)
+        V - conjunto de vertices
+        A - conjuntos de arestas que liga esses vertices
+
+    Tipos de Grafos: 
+
+    -Grafos direcionados 
+        @ as arestas apresentam direções, ou seja, a conexão entre dois vertices tem um sentido especifico
+           '-> self-loop - aresta que conecta um vertice a ele msm
+
+    -Grafos não orientados
+        @ arestas não apresentam direção
+        @ não costumam ter self-loop
+        @ se existe conexão, ela é válida nos dois sentidos
+
+    -Grafos ponderados
+        @ agora as arestas são representadas por triplas ordenadas
+        @ a terceira ordenada representa alguma medida relevante Àquela aresta
+        @ podem ser direcionados ou não orientados
+    
+    Terminologia 
+
+    -Grau de um vertice == qntd de entradas + qntd de saidas ou o num de vertices a que esse vertice esta conectado
+    -Caminho de grafo 
+    -Ciclo de um grafo
+
+    Matriz de adjacência ==> matriz que contém algumas informações sobre o grafo
+        -Matriz Booleana -> se existe aresta conectando i e j, o elemento a(ij) é 1; se não, 0.
+        -Matriz Adj Ponderada -> matriz de pesos para grafos ponderados 
+            '-> se existe aresta, o elemento é o peso // se não existe aresta, 0.
+    
+    Lista de adjacência ==> tem o mesmo objetivo da matriz de adjacência, mas é feita com um vetor de vetores ou lista encadeada
+        - a primeira posição do meu vetor de vetores contém o vetor de vertices que estao ligados a ele e assim por diante
+        - bem menos complexo (no sentido BigO da palavra) do que a matriz
+
+    Algoritmos 
+
+        () BUSCA EM PROFUNDIDADE (DFS):
+            DFS(u):
+            -para cada vertice v adjacente a u:
+                se v não foi visitado -> DFS(v)
+                se já, continue;
+
+        () BUSCA em LARGURA (BFS)

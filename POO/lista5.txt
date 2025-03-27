@@ -1,0 +1,13 @@
+3. Utilização:
+    -ActionListener => captura ações do software, como apertar botões ou escolher opções de uma caixa de seleção
+        Pode ser usado para uma calculadora por exemplo
+    -KeyListener => captura de eventos de teclado
+        Aplicativos que requerem entrada direta do teclado, como jogos ou editores de texto.
+    -MouseListener => captura eventos do mouse, movimentação e cliques
+        Interações gráficas detalhadas, como destacar componentes ao passar o mouse sobre eles ou criar interfaces de desenho.
+
+4. A principal diferença é que, quando usamos o Listener, é necessário escrever todos os métodos da interface, mesmo
+aqueles que não serão necessários no código. Já o Adapter implementações vazias para todos os metodos, tornando possível
+sobrescrever somente os métodos que serão usados.
+    Normalmente é recomendável usar o Listener quando uma interface não tem muitos métodos; algo mais simples e direto
+Já o adapter é muito útil para interfaces mais complexas como o MouseListener, por exemplo.

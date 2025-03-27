@@ -1,0 +1,11 @@
+Banco de dados
+- conjunto de tabelas relacionadas ou n
+    -cada linha representa um registro 
+    -cada coluna representa um campo no registro
+
+SQL: Structed Query Language 
+    linguagem usada para manioular banco de dados
+
+    COMANDOS
+        CREATE TABLE - cria a tabelas
+        
